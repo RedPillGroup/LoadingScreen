@@ -2,7 +2,7 @@
   "name": "LoadingScreen",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "git@github.com/RedPillGroup/LoadingScreen",
+  "repository": "git@github.com:RedPillGroup/LoadingScreen.git",
   "author": "the-1aw <bguilliod@gmail.com>",
   "license": "MIT",
   "private": true,
