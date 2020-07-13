@@ -1,0 +1,41 @@
+{
+  "name": "typescript-package-template",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:the-1aw/typescript-package-template.git",
+  "author": "the-1aw <bguilliod@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "files": [
+    "/lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jest.config.json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "tslint -p tsconfig.json"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.1",
+    "tslint": "^6.1.2",
+    "tslint-config-airbnb": "^5.11.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.6"
+  }
+}
