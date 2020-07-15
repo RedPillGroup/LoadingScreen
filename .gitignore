@@ -105,3 +105,6 @@ dist
 
 # ignore auto geerated files
 /lib
+
+#Remove MAC garbage
+.DS_Store
