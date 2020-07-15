@@ -1,12 +1,14 @@
 import styledComponents, { css } from 'styled-components';
 import { isMobileOnly } from 'react-device-detect';
 
-export const Background = styledComponents.div<{
+export interface IBackground {
   backgroundColor: string;
   backgroundImage: string;
   isVisible: boolean;
   landscapeGame: boolean;
-}>`
+}
+
+export const Background = styledComponents.div<IBackground>`
   display: ${(props) => (props.isVisible ? 'flex' : 'none')};
   z-index: 2000;
   justify-content: center;
