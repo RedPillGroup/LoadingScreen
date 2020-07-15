@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-	  "jsx": "react",
+    "jsx": "react",
     "target": "es5",
     "lib": ["es6"],
     "module": "commonjs",
@@ -9,11 +9,6 @@
     "strict": true,
     "types": ["react", "jest"]
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/__tests__/*"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
 }

@@ -7,7 +7,7 @@ export const Background = styledComponents.div<{
   isVisible: boolean;
   landscapeGame: boolean;
 }>`
-  display: ${props => props.isVisible ? 'flex' : 'none'};
+  display: ${(props) => (props.isVisible ? 'flex' : 'none')};
   z-index: 2000;
   justify-content: center;
   align-items: center;
@@ -20,10 +20,10 @@ export const Background = styledComponents.div<{
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: ${props => props.backgroundColor};
-  background-image: url(${props => props.backgroundImage});
+  background-color: ${(props) => props.backgroundColor};
+  background-image: url(${(props) => props.backgroundImage});
   @media all and (orientation: portrait) {
-      ${props =>
+      ${(props) =>
         props.landscapeGame && isMobileOnly
           ? css`
               transform: rotate(90deg);

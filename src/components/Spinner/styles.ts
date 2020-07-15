@@ -1,9 +1,8 @@
-
 import styledComponents, { StyledFunction } from 'styled-components';
 
 export const Spin = styledComponents.div<{ spinnerColor: string }>`
     border: 4px solid rgba(0, 0, 0, 0.55);
-    border-top: 4px solid ${props => props.spinnerColor || 'rgb(237, 242, 247)'};
+    border-top: 4px solid ${(props) => props.spinnerColor || 'rgb(237, 242, 247)'};
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
