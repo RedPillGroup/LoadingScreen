@@ -25,6 +25,9 @@
       "tslint -p tsconfig.json"
     ]
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.4",
     "husky": "^4.2.5",
