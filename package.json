@@ -5,7 +5,6 @@
   "repository": "git@github.com:RedPillGroup/LoadingScreen.git",
   "author": "the-1aw <bguilliod@gmail.com>",
   "license": "MIT",
-  "private": true,
   "files": [
     "/lib/**/*"
   ],
