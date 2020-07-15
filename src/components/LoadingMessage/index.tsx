@@ -1,12 +1,7 @@
 import * as React from 'react';
-import { Message } from './styles';
+import { Message, IMessageProps } from './styles';
 
-const LoadingMessage: React.FunctionComponent<{
-  color: string;
-  fontFamily: string;
-  fontSize: string;
-  message: string;
-}> = ({ color, fontFamily, fontSize, message }) => (
+const LoadingMessage: React.FunctionComponent<IMessageProps> = ({ color, fontFamily, fontSize, message }) => (
   <Message color={color} fontFamily={fontFamily} fontSize={fontSize}>
     {message}
   </Message>
