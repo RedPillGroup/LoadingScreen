@@ -8,8 +8,6 @@ export const Spin = styledComponents.div<{ spinnerColor: string }>`
     width: 2rem;
     height: 2rem;
     animation: spin 0.8s linear infinite;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 
     @keyframes spin {
         0% { transform: rotate(0deg); }

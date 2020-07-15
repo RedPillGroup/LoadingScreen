@@ -37,8 +37,8 @@ const LoadingScreen: React.FunctionComponent<LoadingScreenProps> = ({
     landscapeGame={landscapeGame}
   >
     <LoadingLogo logo={logo} />
-    <Spinner spinnerColor={spinnerColor} />
     <LoadingMessage color={color} fontFamily={fontFamily} fontSize={fontSize} message={message} />
+    <Spinner spinnerColor={spinnerColor} />
   </BackgroundContainer>
 );
 
